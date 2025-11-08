@@ -1,0 +1,152 @@
+/*
+ * Palet Warna:
+ * - Putih Krem/Gading (Background): #FDFBF8
+ * - Hijau Sage (Aksen/Teks): #A9B3A2
+ * - Cokelat Tua (Teks Utama): #4C3C34
+ * - Cokelat Terang (Garis/Divider): #D9C3B4
+*/
+
+:root {
+    --color-bg: #FDFBF8; /* Putih Gading */
+    --color-text-primary: #4C3C34; /* Cokelat Tua */
+    --color-sage: #A9B3A2; /* Hijau Sage */
+    --color-accent-light: #D9C3B4; /* Cokelat Terang */
+}
+
+/* Reset CSS Sederhana */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+}
+
+/* Kontainer Utama Undangan */
+.invitation-container {
+    max-width: 600px; /* Batasan lebar agar terlihat bagus di HP */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* --- Bagian Pembuka (Hero) --- */
+
+.hero-section {
+    padding: 100px 20px;
+    /* Anda bisa menambahkan gambar latar belakang di sini jika mau */
+    /* background-image: url('path/to/your/image.jpg'); */
+    background-color: var(--color-bg);
+}
+
+.greeting {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--color-sage); /* Aksen Hijau Sage */
+    margin-bottom: 5px;
+}
+
+.couple-names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3em; /* Ukuran besar untuk nama */
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+    line-height: 1.1;
+}
+
+.ampersand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8em;
+    color: var(--color-sage);
+    display: block; /* Pisahkan nama dengan ampersand di baris baru */
+    margin: 5px 0;
+}
+
+.date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    border-top: 1px solid var(--color-accent-light); /* Garis Cokelat Terang */
+    border-bottom: 1px solid var(--color-accent-light);
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 30px;
+    background-color: var(--color-sage); /* Tombol dengan warna Hijau Sage */
+    color: var(--color-bg); /* Teks Putih */
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #929d8b; /* Warna lebih gelap saat disentuh */
+}
+
+/* --- Bagian Detail Acara --- */
+
+.details-section {
+    padding: 60px 20px;
+    border-top: 5px double var(--color-accent-light); /* Pembatas Elegan */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.detail-box {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid var(--color-accent-light); /* Bingkai tipis */
+}
+
+.detail-box h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: var(--color-sage);
+    margin-bottom: 10px;
+}
+
+.detail-box p {
+    margin: 5px 0;
+}
+
+/* --- Bagian Penutup --- */
+
+.closing-section {
+    padding: 40px 20px 80px 20px;
+    border-top: 1px solid var(--color-accent-light);
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.sincerely {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 20px;
+    color: var(--color-sage);
+}
+
+.sincerely-names {
+    font-weight: 600;
+    margin-top: 5px;
+}
